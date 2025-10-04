@@ -3,9 +3,45 @@
 ## 学习目标
 - 掌握C语言的基本数据类型
 - 理解变量的声明和初始化
-- 学会使用常量和字面量
-- 了解类型转换的规则
+# C 数据类型 演示 Lab
 
+本目录实现一个模块化的 C 语言数据类型演示实验（lab）。演示内容覆盖：基本类型、构造类型、指针类型与空类型（void），每一类为独立模块，`Makefile` 会将它们编译并链接为一个可执行文件 `data_types_demo`。
+
+目录结构（主要文件）
+
+- `main.c` — 演示入口，依次调用各模块并打印分节标题。
+- `types_demo.h` — 模块函数声明。
+- `basics.c` — 基本类型示例（整型、浮点、_Bool、sizeof/limits、符号/无符号示例）。
+- `constructs.c` — 构造类型示例（数组、struct、union、enum）。
+- `pointers.c` — 指针类型示例（指针、指针算术、函数指针、指向数组的指针）。
+- `void_examples.c` — 空类型示例（void 函数、void* 通用指针）。
+- `Makefile` — 构建规则：`make` 生成 `data_types_demo`，`make clean` 清理对象文件与可执行文件。
+
+快速使用
+
+构建：
+
+```sh
+cd 02-syntax/01-data-types
+make
+```
+
+运行：
+
+```sh
+./data_types_demo
+```
+
+每个模块的输出都带有解释性注释和小示例，适合课堂演示或自学。
+
+学习建议
+
+- 先观察 `basics.c` 的 `sizeof` 输出和整型的符号/溢出行为。
+- 再看 `constructs.c`，理解 `struct` 与 `union` 的内存布局差异。
+- `pointers.c` 演示地址与偏移，注意指针与数组的关系。
+- `void_examples.c` 展示 `void` 的用途（无返回、通用指针）。
+
+如果需要，我可以把每个模块拆成单独的可执行目标或添加更多练习与单元测试。
 ## 知识要点
 
 ### 基本数据类型

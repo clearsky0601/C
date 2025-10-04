@@ -46,8 +46,8 @@ int main() {
     
     // 3. 浮点类型演示
     printf("\n3. 浮点类型：\n");
-    float f = 3.14159f;
-    double d = 3.141592653589793;
+    float f = 3.14159f; // 单精度浮点数
+    double d = 3.141592653589793; // 双精度浮点数
     long double ld = 3.141592653589793238L;
     
     printf("   float f = %.6f (大小: %zu字节)\n", f, sizeof(f));

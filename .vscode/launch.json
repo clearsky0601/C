@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/tommy/workplace/fundamentals/C/02-syntax/01-data-types",
+      "program": "/Users/tommy/workplace/fundamentals/C/02-syntax/01-data-types/build/Debug/outDebug"
+    }
+  ]
+}

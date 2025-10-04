@@ -82,7 +82,7 @@ int main() {
     printf("   p << 1 = %d (左移1位)\n", p << 1);
     printf("   p >> 1 = %d (右移1位)\n", p >> 1);
     
-    // 7. 条件运算符
+    // 7. 条件运算符。也叫三目运算符。
     printf("\n7. 条件运算符：\n");
     int max = (a > b) ? a : b;
     printf("   max = (a > b) ? a : b = %d\n", max);
